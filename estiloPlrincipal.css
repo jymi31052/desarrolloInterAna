@@ -1,0 +1,60 @@
+    /*
+    FUENTES IMPORTADAS DE GOOGLE
+    font-family: 'David Libre', serif;
+font-family: 'Montserrat', sans-serif;
+    */
+
+    body {
+        background-color: rgba(223, 210, 209, 1);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    section {
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        border: black dashed 1px;
+        background-color: rgba(255, 139, 136, 1);
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .cabecera {
+        font-family: 'David Libre', serif;
+        border-radius: 20%;
+        background-color: rgba(255, 21, 15, 1);
+        text-align: center;
+        width: 60%;
+        height: auto;
+        margin: auto;
+        text-decoration: underline;
+        text-shadow: 2px 2px;
+    }
+
+    section .subseccion {
+        text-align: left;
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba( 72, 2, 0, 1);
+        margin: 10px;
+        padding: 10px;
+        border: dashed 1px;
+        display: inline-block;
+        width: 35%;
+    }
+
+    .pie {
+        padding-top: 30px;
+        margin-top: 20px;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        clear: both;
+        background-color: rgba( 72, 2, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 10px;
+    }
