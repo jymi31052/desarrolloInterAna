@@ -12,6 +12,11 @@ font-family: 'Montserrat', sans-serif;
         text-decoration: none;
     }
 
+    section ul{
+        width: 50%;
+        margin: auto;
+    }
+
     section {
         width: 80%;
         padding: 10px;
