@@ -12,14 +12,14 @@ font-family: 'Montserrat', sans-serif;
         text-decoration: none;
     }
 
-    section ul{
+    section ul {
         width: 50%;
         margin: auto;
     }
 
     section {
         width: 80%;
-        padding: 10px;
+        padding: 2px;
         margin: auto;
         border: black dashed 1px;
         background-color: rgba(255, 139, 136, 1);
@@ -32,7 +32,8 @@ font-family: 'Montserrat', sans-serif;
         border-radius: 20%;
         background-color: rgba(255, 21, 15, 1);
         text-align: center;
-        width: 60%;
+        padding: 5px;
+        width: 70%;
         height: auto;
         margin: auto;
         text-decoration: underline;
@@ -46,16 +47,17 @@ font-family: 'Montserrat', sans-serif;
         margin: 10px;
         padding: 10px;
         border: dashed 1px;
-        display: inline-block;
+        float: left;
+        /*display: inline-block;*/
         width: 45%;
     }
 
-    section .subseccion ul{
+    section .subseccion ul {
         width: 90%;
     }
 
-    section ul li a{
-        font-size: 2.0em;
+    section ul li a {
+        font-size: 1.2em;
     }
 
     .pie {
