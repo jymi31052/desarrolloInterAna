@@ -18,7 +18,7 @@ font-family: 'Montserrat', sans-serif;
     }
 
     section {
-        width: 80%;
+        width: 90%;
         padding: 2px;
         margin: auto;
         border: black dashed 1px;
@@ -61,15 +61,16 @@ font-family: 'Montserrat', sans-serif;
     }
 
     .pie {
-        padding-top: 30px;
-        margin-top: 20px;
+        padding: 15px;
+        margin-top: 10px;
         text-align: center;
-        height: 50px;
+
         width: 100%;
         clear: both;
         background-color: rgba( 72, 2, 0, 1);
         color: rgba(255, 255, 255, 1);
         position: -webkit-sticky;
         position: sticky;
-        bottom: 10px;
+        bottom: 5px;
+        font-weight: bold;
     }
