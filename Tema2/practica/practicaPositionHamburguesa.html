@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*Con este codigo reseteo los estilos que me puedan dar los distintos navegadores*/
+         *{
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 2em;
+        }
+
+/*En la caja exterior la pongo como tipo de posicion relativa, y los top y left que 
+pongo iran con relacion a los bordes de la ventana*/
+        .relative {
+            position: relative;
+            top: 30px;
+            left: 40px;
+            width: 50px;
+            height: auto;
+        }
+
+/*Aqui indicara las posiciones absolutas dentro de la caja en la que se encuentra*/
+        .absolute {
+            position: absolute;
+            width: 200px;
+            top: 5px;
+            left: 0px;
+            /*Esta propiedad es para que de primeras no me salga*/
+            display: none;
+        }
+
+
+        .relative:hover .absolute {
+            /*Cuando pasamos el raton por encima, pasará el display de none a display
+            y de este modo podremos ver lo que hay en su interior*/
+            display: block;
+            background-color: rgb(235, 205, 198);
+            /*Le creamos el borde sombreado, y el 8 es para que haya un gradiente*/
+            box-shadow: 10px 20px 8px greenyellow;
+        }
+
+        .absolute a {
+            margin: 20px;
+            padding: 5px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid grey;
+            background-color: rgb(197, 188, 188);
+            color: black;
+            /*Esto de momento no se como se usa, y no funciona, asi que no lo descomentes esperando que pase algo*/
+            /*transition: width 2s;*/
+        }
+
+/*Con este se tienen que aplicar dos hovers, para que una vez que se hayan desplegado los enlaces
+cuando nos pongamos encima de cada link, se nos signifique*/
+        .absolute a:hover{
+            background-color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .relative button{
+            font-size: 1.1em;
+            /*Con las dos siguientes instrucciones le quitamos el estilo que tienen por defecto 
+            los botones*/
+            text-decoration: none;
+            border: none;
+            color: black;
+        }
+    </style>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Posiciones relativas, absolutas, y display none y en bloque</title>
+</head>
+
+<body>
+
+    <h2>Posiciones relativas, absolutas, y display none y en bloque</h2>
+
+    <div class="relative">
+        <button type="button" ><span class="material-icons">list</span></button>
+
+        <div class="absolute">
+            <a href="#">LINK1</a>
+            <a href="#">LINK2</a>
+            <a href="#">LINK3</a>
+            <a href="#">LINK4</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
