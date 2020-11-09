@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+        }
+
+        .relative {
+            text-align: center;
+            position: relative;
+            right: 0px;
+            width: 300px;
+            height: auto;
+        }
+
+        .relative button{
+            margin: 10px;
+        }
+
+        .absolute {
+
+            width: 200px;
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            display: none;
+            /*border: 3px solid #73AD21;*/
+        }
+
+        .relative:hover .absolute {
+            display: block;
+            background-color: rgb(190, 146, 168);
+            box-shadow: 10px 20px 8px greenyellow;
+            transition: margin-left 4s ease-in-out 1s;
+        }
+
+        .absolute a {
+            margin: 10px;
+            padding: 5px;
+            text-decoration: none;
+            display: block;
+            border: 1px solid grey;
+            background-color: rgb(197, 188, 188);
+            color: black;
+        }
+
+        .relative button{
+            font-size: 1.1em;
+            text-decoration: none;
+            border: 1px solid grey;
+            background-color: rgb(197, 188, 188);
+            color: black;
+            width: 200px;
+        }
+    </style>
+    <title>Posiciones relativas, absolutas, y display none y en bloque</title>
+</head>
+
+<body>
+
+    <h2>Posiciones relativas, absolutas, y display none y en bloque</h2>
+
+    <div class="relative">
+        <BUTton>BOTON</BUTton>
+
+        <div class="absolute">
+            <a href="#">LINK1</a>
+            <a href="#">LINK2</a>
+            <a href="#">LINK3</a>
+            <a href="#">LINK4</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

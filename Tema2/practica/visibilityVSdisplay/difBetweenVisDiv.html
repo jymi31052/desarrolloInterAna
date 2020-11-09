@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between display:none and visiblity: hidden</title>
+</head>
+<style>
+    img {
+        margin: 5px;
+        width: 95%;
+    }
+
+    div {
+        text-align: center;
+        float: left;
+        width: 20%;
+        max-width: 25%;
+        border: 2px solid black;
+        border-radius: 10% 15%;
+        box-shadow: 20px 25px 10px rgba(215, 125, 200, .6);
+        margin: 20px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    #img1 img:hover {
+        display: none;
+    }
+
+    #img2 img:hover {
+        visibility: hidden;
+    }
+
+    #img3 img:hover {
+        display: none;
+    }
+
+</style>
+
+<body>
+    <h1>Difference between display:none and visiblity: hidden</h1>
+    <p><strong> visibility:hidden </strong>hides the element, but it still takes up space in the layout.</p>
+    <p><strong> display:none </strong>removes the element from the document. It does not take up any space.</p>
+    <div id="img1">
+        <h3>Box </h3>
+        <img src="./imagenes/img_5terre.jpg" alt="">
+        <button onclick="removeElement()">Remove</button>
+    </div>
+    <div id="img2">
+        <h3>Box 2</h3>
+        <img src="./imagenes/img_forest.jpg" alt="">
+        <button onclick="changeVisibility()">Hidden</button>
+    </div>
+    <div id="img3">
+        <h3>Box 3</h3>
+        <img src="./imagenes/img_lights.jpg" alt="">
+        <button onclick="resetElement()">Reset All</button>
+    </div>
+
+    <script>
+        function removeElement() {
+            document.getElementById("img1").style.display = "none";
+        }
+
+        function changeVisibility() {
+            document.getElementById("img2").style.visibility = "hidden";
+        }
+
+        function resetElement() {
+            document.getElementById("img1").style.display = "block";
+            document.getElementById("img2").style.visibility = "visible";
+        }
+    </script>
+
+
+</body>
+
+</html>
