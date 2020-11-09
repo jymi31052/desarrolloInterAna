@@ -29,9 +29,10 @@
             color: white;
             /*display: none;*/
         }
-        .navegacion{
+
+        .navegacion {
             position: sticky;
-            top:200px;
+            top: 200px;
         }
 
         .contenedor ul li {
@@ -47,18 +48,110 @@
             font-weight: bold;
         }
 
+        .contenedor2 {
+            clear: both;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            padding: 10px;
+            top: 70px;
+            left: 0px;
+            background-color: rgb(110, 160, 108);
+            color: white;
+        }
+
+        .contenedor2 ul li {
+            padding-left: 10px;
+            padding-right: 35px;
+            display: inline-block;
+
+        }
+
         #menuWhat {
             float: right;
         }
 
         #menuWhat a span,
-        #lupa a span {
+        #lupa a span,
+        #camara a span {
             color: white;
             font-size: 3em;
         }
 
         #lupa {
             float: right;
+        }
+
+
+        #camara {
+            margin-top: 20px;
+            width: 10%;
+            float: left;
+        }
+
+        .pestanias {
+            margin-top: 40px;
+            width: 20%;
+            float: left;
+        }
+
+        .conversaciones {
+            position: absolute;
+            top: 160px;
+            width: 100%;
+
+        }
+
+        .conversacion1 {
+            width: 99%;
+            display: inline-block;
+        }
+
+        .conversacion1 img {
+            border-radius: 50%;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .conversacion1 .texto {
+            width: 70%;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .horanum {
+            float: right;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .horanum .hora {
+            color: rgb(30, 184, 30);
+        }
+
+        .horanum .num {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(30, 184, 30);
+            color: white;
+            border-radius: 50%;
+            margin: 10px;
+            padding: 8px;
+        }
+
+        #abrir_come {
+            background-color: rgb(50, 206, 84);
+            color: white;
+            padding: 10px;
+            font-size: 3.0em;
+        }
+        .comment{
+            position: fixed;
+            display: block;
+            top:85%;
+            left: 90%;
         }
     </style>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -74,13 +167,134 @@
         <div class="contenedor">
             <ul>
                 <li id="whatsapp">
-                    <p>Whatsapsdapppp</p>
+                    <p>Whatsapps</p>
                 </li>
                 <li id="menuWhat"><a href="#"><span class="material-icons">more_vert</span></a></li>
                 <li id="lupa"><a href="#"><span class="material-icons">search</span></a></li>
-
             </ul>
         </div>
+        <div class="contenedor2">
+            <ul>
+                <li id="camara"><a href="#"><span class="material-icons">camera_alt</span></a></li>
+                <li class="pestanias">CHATS</li>
+                <li class="pestanias">LLAMADAS</li>
+                <li class="pestanias">ESTADOS</li>
+            </ul>
+        </div>
+        <div class="conversaciones">
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+            </div>
+            <hr>
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+            </div>
+            <hr>
+            <div class="conversacion1">
+                <img src="./imagenes/cara1.jpg" width="80px" height="80px" alt="">
+                <div class="texto">
+                    <p><strong>Tomas Gutierrez</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusamus aliquid iure
+                        iste
+                        obcaecati a blanditiis quidem sit nesciunt quos.</p>
+                </div>
+                <div class="horanum">
+                    <p class="hora">13:54</p>
+                    <p class="num">25</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="comment">
+        <a href="#">
+        <span id="abrir_come" class="material-icons">insert_comment</span>
+    </a>
     </div>
 
 </body>
